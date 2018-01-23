@@ -31,12 +31,14 @@ eclipse将tomcat的项目发布目录（tomcat目录中的webapp）重定向了,
 
 在eclipse中的server页面，双击tomcat服务，会看到如图所示的配置页面：
 
-![双击](https://github.com/guangpingheng01/note201801/Servlet+Jsp/Jsp+Servlet学习笔记/Chapter2/picture/servers.jpg)
+![双击](https://github.com/guangpingheng01/note201801/raw/master/picture/servers.jpg)
 
-![servers conf](https://github.com/guangpingheng01/note201801/Servlet+Jsp/Jsp+Servlet学习笔记/Chapter2/picture/servers-conf.gif)
+![servers conf](https://github.com/guangpingheng01/note201801/raw/master/picture/servers-conf.gif)
 
 其中第二项Server Locations是选择部署等相关的。此时如果该tomcat中部署了项目的话，这红圈中的选项会灰掉不能修改，要修改必须得先把tomcat中的部署的服务都移除。通过右键单击tomcat服务器选择 Add and Remove，在弹出的对话框中移除已部署的项目。移除完确定后，将看到上面的选项面板部分可编辑了。
-![addandremove](https://github.com/guangpingheng01/note201801/Servlet+Jsp/Jsp+Servlet学习笔记/Chapter2/picture/addandremove.gif)
+
+![addandremove](https://github.com/guangpingheng01/note201801/raw/master/picture/addandremove.gif)
+
 如果还是不能修改，那么就还是在上图的那个选项中，Clean，重新运行即可。
 
 
