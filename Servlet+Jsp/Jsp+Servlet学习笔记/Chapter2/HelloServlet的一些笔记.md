@@ -12,6 +12,10 @@
 
 ## 问题二：tomcat在eclipse中启动成功，主页却打不开
 
+> 参考 <http://blog.csdn.net/zhanggaokai/article/details/73469473>
+
+>参考 <http://www.cnblogs.com/mubin/p/3906684.html>
+
 ### 现象：
 > tomcat在eclipse里面能正常启动，而在浏览器中访问http://localhost\:8080/不能访问，且报404错误。同时其他项目页面也不能访问。
 
@@ -27,12 +31,12 @@ eclipse将tomcat的项目发布目录（tomcat目录中的webapp）重定向了,
 
 在eclipse中的server页面，双击tomcat服务，会看到如图所示的配置页面：
 
-![双击](/picture/servers.jpg)
+![双击](https://github.com/guangpingheng01/note201801/Servlet+Jsp/Jsp+Servlet学习笔记/Chapter2/picture/servers.jpg)
 
-![servers conf](/picture/servers-conf.gif)
+![servers conf](https://github.com/guangpingheng01/note201801/Servlet+Jsp/Jsp+Servlet学习笔记/Chapter2/picture/servers-conf.gif)
 
 其中第二项Server Locations是选择部署等相关的。此时如果该tomcat中部署了项目的话，这红圈中的选项会灰掉不能修改，要修改必须得先把tomcat中的部署的服务都移除。通过右键单击tomcat服务器选择 Add and Remove，在弹出的对话框中移除已部署的项目。移除完确定后，将看到上面的选项面板部分可编辑了。
-![addandremove](/picture/addandremove.gif)
+![addandremove](https://github.com/guangpingheng01/note201801/Servlet+Jsp/Jsp+Servlet学习笔记/Chapter2/picture/addandremove.gif)
 如果还是不能修改，那么就还是在上图的那个选项中，Clean，重新运行即可。
 
 
@@ -43,3 +47,5 @@ eclipse将tomcat的项目发布目录（tomcat目录中的webapp）重定向了,
 重启tomcat服务器，访问http://localhost:8080则能正常访问了，自己部署的项目也能正常访问了。
 
 如果还是不行，那么就在“Deploy path”那手动点击Browse选择你的tomcat的webapps的文件。
+
+**如果这样设置完，在eclipse中还是不能用浏览器打开，而从外面浏览器中能打开，那就在eclipse中换一个浏览器**
