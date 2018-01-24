@@ -51,3 +51,14 @@ eclipse将tomcat的项目发布目录（tomcat目录中的webapp）重定向了,
 如果还是不行，那么就在“Deploy path”那手动点击Browse选择你的tomcat的webapps的文件。
 
 **如果这样设置完，在eclipse中还是不能用浏览器打开，而从外面浏览器中能打开，那就在eclipse中换一个浏览器**
+
+## 问题三
+
+### 现象
+
+>当有web.xml文件，而文件为空时，当重新加载项目或者运行项目时，会提示descriptor啥的找不到了
+并且，当运行项目的某个servlet文件时，会发现没有run on server那一项了。
+
+### 解决
+
+> 把空的web.xml文件删掉，或者填充上内容，刷新项目重新运行即可。
