@@ -62,3 +62,15 @@ eclipse将tomcat的项目发布目录（tomcat目录中的webapp）重定向了,
 ### 解决
 
 > 把空的web.xml文件删掉，或者填充上内容，刷新项目重新运行即可。
+
+
+## 问题四
+
+### 现象
+
+> 比如你该了一些东西，如更改了web应用程序环境根目录(Context Root)，在课本p35，比如FirstServlet改成FS，改之前运行是
+> http\://localhost\:8088/FirstServlet/hello.view,改之后还是没变化，此时即使重启也还是没变化。
+
+### 解决
+
+> 右击eclipse中的你所用的tomcat，点击clean，清除缓存，再重新启动/重新运行，即可。
